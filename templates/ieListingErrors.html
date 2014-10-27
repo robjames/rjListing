@@ -1,0 +1,11 @@
+<div class="alert error" ng-show="list.error" >
+
+   <span ng-show="list.error.status == 202">{{list.error.data.message}}: There was an error parsing the data returned from the server. This is probably due to a "funny" character being entered.</span>
+
+   <span ng-show="list.error.status == 500">Unfortunately there was an error on the server. Please contact us for further assistance.</span>
+
+   <span ng-show="list.error.status == 400">Are you sure you have entered everything correctly?.</span>
+   <span ng-show="list.error.status == 404">404 Not found. Seems unlikely.</span>
+
+   <span ng-show="list.error.status == 0">Cancelled request.</span>
+</div>

@@ -1,0 +1,15 @@
+<div class="toolbar">
+    <button class="button left" ng-click="list.first()" ng-disabled="list.disableFirst()">first</button
+    ><button class="button middle" ng-click="list.previous()" ng-disabled="list.disablePrevious()">previous</button
+    ><button class="button middle" ng-click="list.more()"  ng-disabled="list.disableMore()">show more</button
+    ><button class="button middle" ng-click="list.next()" ng-disabled="list.disableNext()">next</button
+	><button class="button right" ng-click="list.last()" ng-disabled="list.disableLast()">last</button
+    >
+    <!--
+<label>start <input type="number" ng-model="list.params.start" min="0" /></label>
+    <label>limit <input type="number" ng-model="list.params.limit" min="1" max="100"/></label>
+    <label>sort <input type="text" ng-model="list.params.sort" /></label>
+    <label>dir <input type="text" ng-model="list.params.dir" /></label>
+-->
+    (showing <span ng-bind="list.params.start+1"></span> - <span ng-bind="list.params.start + list.params.limit"></span> of <span ng-bind="list.totalCount"></span>)
+</div>
